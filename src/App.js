@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Feedback from './Feedback';
+import ThankYou from './ThankYou'
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+
+//state held here.
+
 
 function App() {
+
+  const [activeRating, setActiveRating] = useState('')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Routes>
+        <Route path="/" element={
+        <Feedback
+         activeRating={activeRating}
+         setActiveRating={setActiveRating}
+          />} />
+        <Route path="thankyou" element={<ThankYou activeRating={activeRating}/>} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,60 @@
+import styled, { createGlobalStyle, css } from "styled-components";
+// import { normalize } from "styled-normalize";
+
+const Flex = styled.div`
+position: relative;
+display: flex;
+align-items: center;
+
+${props =>
+    props.column &&
+    css`
+      flex-direction: column;
+    `}
+
+${props =>
+props.spaceBetween &&
+css `
+justify-content: space-between;
+`
+}
+
+${props =>
+    props.flexEnd &&
+    css `
+    justify-content: flex-end;
+    `
+}
+
+${props =>
+props.alignTop &&
+css`
+justify-content: flex-start
+`
+}
+
+${props =>
+props.noHeight &&
+css `
+height:0
+`
+}
+
+`
+
+const GlobalStyle = createGlobalStyle`
+
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+`;
+
+export { Flex };
+export default GlobalStyle;
