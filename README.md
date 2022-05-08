@@ -8,7 +8,7 @@ This component can be used to collected user feedback.
 
 ## Screenshots
 ![](src/images/Desktop-InActive.png)
-![](./images/Desktop-Active.png)
-![](./images/DesktopThankYou.png)
+![](src/images/Desktop-Active.png)
+![](src/images/DesktopThankYou.png)
 ![](./images/Mobile-InActive.png)
 ![](./images/Mobile-Active.png)
