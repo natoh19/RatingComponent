@@ -10,8 +10,6 @@ This component can be used to collected user feedback.
 ![](src/images/Desktop-InActive.png)
 ![](src/images/Desktop-Active.png)
 ![](src/images/DesktopThankYou.png)
-![](src/images/Mobile-InActive.png)
-![](src/images/MobileThankYou.png)
 
 # Getting Started with Create React App
 
